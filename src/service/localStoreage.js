@@ -9,10 +9,11 @@ export const guardarPelicula = (pelicula) => {
     localStorage.setItem('peliculas', JSON.stringify(peliculas));
 };
 
-export const getPelicula = (index) => {
-    const peliculas = getPeliculas();
-    return peliculas[index];
+export const getPelicula = (id) => {
+  const peliculas = getPeliculas();
+  return peliculas.find(pelicula => pelicula.id === id) || null;
 };
+
   
 // Precargar películas en el localStorage
 const peliculasPrecargadas = [
@@ -164,5 +165,3 @@ const peliculasPrecargadas = [
   peliculasPrecargadas.forEach((pelicula) => {
     guardarPelicula(pelicula);
   });
-
-  console.log(getPeliculas());
