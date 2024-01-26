@@ -1,8 +1,12 @@
-# React + Vite
+# Proyecto React-Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto integrador de la fase React del Bootcamp Java Developer EducacionIT
 
-Currently, two official plugins are available:
+El proyecto consta de realizar una SPA que represente una pagina en la cual se listen peliculas y a su vez se puede observar detalladamente la info de cada una y se pueda también buscar peliculas por titulo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías
+
+Las tecnologías utilizadas en este proyecto fueron:
+- Vite
+- ReactJS
+- HTML + CSS + Bootstrap
