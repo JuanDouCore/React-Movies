@@ -11,7 +11,12 @@ export const guardarPelicula = (pelicula) => {
 
 export const getPelicula = (id) => {
   const peliculas = getPeliculas();
-  return peliculas.find(pelicula => pelicula.id === id) || null;
+  const idBuscada = parseInt(id, 10);
+  console.log('ID buscada:', idBuscada);
+  const peliculaEncontrada = peliculas.find(pelicula => pelicula.id === idBuscada);
+  console.log('Película encontrada:', peliculaEncontrada);
+  return peliculaEncontrada || null;
+  
 };
 
   
