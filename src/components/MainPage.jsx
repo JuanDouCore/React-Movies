@@ -1,4 +1,3 @@
-// MainPage.jsx
 import { useState } from 'react';
 import AllMovies from './AllMovies';
 import SearchMovie from './SearchMovie';
@@ -22,11 +21,15 @@ export function MainPage() {
           {searchResults.length > 0 ? (
             <AllMovies peliculas={searchResults} />
           ) : (
-            <AllMovies />
+            <AllMovies peliculas={searchResults}/>
+          )}
+                    {searchResults.length > 0 ? (
+            console.log(searchResults)
+          ) : (
+            console.log("no hay peliculas")
           )}
         </Col>
       </Row>
     </Container>
   );
-}
-
+};

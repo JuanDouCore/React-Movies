@@ -6,7 +6,9 @@ import { Form, FormControl, Button } from 'react-bootstrap';
 export default function SearchMovie({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearchClick = () => {
+  const handleSearchClick = (e) => {
+
+    e.preventDefault(); 
 
     const filteredMovies = getPeliculas().filter(
       (pelicula) =>
@@ -18,7 +20,7 @@ export default function SearchMovie({ onSearch }) {
   };
 
   return (
-    <Form inline>
+    <Form onSubmit={handleSearchClick}>
       <FormControl
         type="text"
         placeholder="Buscar películas por título"
@@ -26,7 +28,7 @@ export default function SearchMovie({ onSearch }) {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="mr-sm-2"
       />
-      <Button variant="outline-success" onClick={handleSearchClick}>
+      <Button variant="outline-success" type="submit">
         Buscar
       </Button>
     </Form>
