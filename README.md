@@ -20,3 +20,4 @@ Esta app web con React fue desplegada con el motor de despliegue de Vercel Hosti
 2. Se asocio la cuenta de GitHub con Vercel Hosting
 3. Se subió el respositorio y se puso de manera pública en esta cuenta de GitHub
 4. En Vercel Hosting se selecciono este repositorio y se activo el despliegue standard
+5. Automaticamente vercel hosting gestiona este repositorio para desplegarlo
