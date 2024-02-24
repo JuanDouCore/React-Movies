@@ -10,3 +10,13 @@ Las tecnologías utilizadas en este proyecto fueron:
 - Vite
 - ReactJS
 - HTML + CSS + Bootstrap
+
+
+## Despliegue 
+
+Esta app web con React fue desplegada con el motor de despliegue de Vercel Hosting
+
+1. Se creo la cuenta en Vercel hosting
+2. Se asocio la cuenta de GitHub con Vercel Hosting
+3. Se subió el respositorio y se puso de manera pública en esta cuenta de GitHub
+4. En Vercel Hosting se selecciono este repositorio y se activo el despliegue standard
